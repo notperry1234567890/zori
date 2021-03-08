@@ -3,11 +3,11 @@ buildscript {
         jcenter()
         maven {
             name = 'forge'
-            url = 'http://files.minecraftforge.net/maven'
+            url = 'https://files.minecraftforge.net/maven'
         }
         maven {
             name = 'SpongePowered'
-            url = 'http://repo.spongepowered.org/maven'
+            url = 'https://repo.spongepowered.org/maven'
         }
     }
     dependencies {
@@ -23,7 +23,7 @@ apply plugin: 'org.spongepowered.mixin'
 apply plugin: 'com.github.johnrengelman.shadow'
 
 version project.modVersion
-group project.modGroup // http://maven.apache.org/guides/mini/guide-naming-conventions.html
+group project.modGroup // https://maven.apache.org/guides/mini/guide-naming-conventions.html
 
 sourceCompatibility = targetCompatibility = '1.8'
 compileJava {
@@ -41,7 +41,7 @@ minecraft {
 repositories {
     maven {
         name = 'spongepowered-repo'
-        url = 'http://repo.spongepowered.org/maven/'
+        url = 'https://repo.spongepowered.org/maven/'
     }
     maven {
         name = 'impactdevelopment-repo'
@@ -49,7 +49,7 @@ repositories {
     }
     maven {
         name = 'swt-repo'
-        url = "http://maven-eclipse.github.io/maven"
+        url = "https://maven-eclipse.github.io/maven"
     }
     maven {
         name = "jitpack.io"
